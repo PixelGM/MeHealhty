@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MeHealthy">
+    <meta name="keywords" content="MeHealthy, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeHealthy</title>
+    <link href="../../../fonts.googleapis.com/css2ce4e.css?family=Cairo:wght@200;300;400;600;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script nonce="b40ed05a-09b6-47e1-8c86-44a045a9e3ef">
+      (function(w, d) {
+        ! function(bv, bw, bx, by) {
+          bv[bx] = bv[bx] || {};
+          bv[bx].executed = [];
+          bv.zaraz = {
+            deferred: [],
+            listeners: []
+          };
+          bv.zaraz.q = [];
+          bv.zaraz._f = function(bz) {
+            return function() {
+              var bA = Array.prototype.slice.call(arguments);
+              bv.zaraz.q.push({
+                m: bz,
+                a: bA
+              })
+            }
+          };
+          for (const bB of ["track", "set", "debug"]) bv.zaraz[bB] = bv.zaraz._f(bB);
+          bv.zaraz.init = () => {
+            var bC = bw.getElementsByTagName(by)[0],
+              bD = bw.createElement(by),
+              bE = bw.getElementsByTagName("title")[0];
+            bE && (bv[bx].t = bw.getElementsByTagName("title")[0].text);
+            bv[bx].x = Math.random();
+            bv[bx].w = bv.screen.width;
+            bv[bx].h = bv.screen.height;
+            bv[bx].j = bv.innerHeight;
+            bv[bx].e = bv.innerWidth;
+            bv[bx].l = bv.location.href;
+            bv[bx].r = bw.referrer;
+            bv[bx].k = bv.screen.colorDepth;
+            bv[bx].n = bw.characterSet;
+            bv[bx].o = (new Date).getTimezoneOffset();
+            if (bv.dataLayer)
+              for (const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ, bK) => ({
+                  ...bJ[1],
+                  ...bK[1]
+                }))))) zaraz.set(bI[0], bI[1], {
+                scope: "page"
+              });
+            bv[bx].q = [];
+            for (; bv.zaraz.q.length;) {
+              const bL = bv.zaraz.q.shift();
+              bv[bx].q.push(bL)
+            }
+            bD.defer = !0;
+            for (const bM of [localStorage, sessionStorage]) Object.keys(bM || {}).filter((bO => bO.startsWith("_zaraz_"))).forEach((bN => {
+              try {
+                bv[bx]["z_" + bN.slice(7)] = JSON.parse(bM.getItem(bN))
+              } catch {
+                bv[bx]["z_" + bN.slice(7)] = bM.getItem(bN)
+              }
+            }));
+            bD.referrerPolicy = "origin";
+            bD.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(bv[bx])));
+            bC.parentNode.insertBefore(bD, bC)
+          };
+          ["complete", "interactive"].includes(bw.readyState) ? zaraz.init() : bv.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, "zarazData", "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+      <div class="humberger__menu__logo">
+        <a href="#">
+          <img src="images/logo2.png" alt="">
+        </a>
+      </div>
+      <div class="humberger__menu__widget">
+        <div class="header__top__right__language">
+          <img src="img/language.png" alt="">
+          <div>English</div>
+          <span class="arrow_carrot-down"></span>
+          <ul>
+            <li>
+              <a href="#">Spanis</a>
+            </li>
+            <li>
+              <a href="#">English</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__top__right__auth">
+          <a href="#">
+            <i class="fa fa-user"></i> Login </a>
+        </div>
+      </div>
+      <nav class="humberger__menu__nav mobile-menu">
+        <ul>
+          <li class="active">
+            <a href="main.html">Home</a>
+          </li>
+          <!-- <li><a href="shop-grid.html">Food Index</a></li> -->
+          <li>
+            <a href="#">Community</a>
+            <ul class="header__menu__dropdown">
+              <li>
+                <!-- <a href="shop-details.html">Shop Details</a> -->
+                <a href="#">Shop Details</a>
+              </li>
+              <li>
+                <!-- <a href="shoping-cart.html">Shoping Cart</a> -->
+                <a href="#">Shoping Cart</a>
+              </li>
+              <li>
+                <!-- <a href="checkout.html">Check Out</a> -->
+                <a href="#">Check Out</a>
+              </li>
+              <li>
+                <!-- <a href="blog-details.html">Blog Details</a> -->
+                <a href="#">Blog Details</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- <a href="blog.html">Health Check Up</a> -->
+            <a href="#">Health Check Up</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+      <div class="header__top__right__social">
+        <a href="#">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-pinterest-p"></i>
+        </a>
+      </div>
+      <div class="humberger__menu__contact">
+        <ul>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6cec3cacac9e6c5c9cac9d4cacfc488c5c9cb">[email&#160;protected]</a>
+          </li>
+          <li>Free Shipping for all Order of $99</li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="header__top__left">
+                <ul>
+                  <li>PROMO! Free Trial 1 bulan | Discount 50% Diamond Premium, Only Rp. 25.000!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="header__top__right">
+                <div class="header__top__right__social">
+                  <!-- <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-pinterest-p"></i></a> -->
+                </div>
+                <div class="header__top__right__language">
+                  <img src="img/indonesia.png" alt="">
+                  <div>Indonesia</div>
+                  <span class="arrow_carrot-down"></span>
+                  <ul>
+                    <li>
+                      <a href="#">English</a>
+                    </li>
+                    <li>
+                      <a href="#">Indonesia</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__top__right__auth">
+                  <a href="#">
+                    <i class="fa fa-user"></i> Login </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="header__logo">
+              <a href="index.html">
+                <img src="images/logo2.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="header__menu">
+              <ul>
+                <li class="active">
+                  <a href="main.html">Home</a>
+                </li>
+                <!-- <li><a href="shop-grid.html">Food Index</a></li> -->
+                <li>
+                  <a href="#">Community</a>
+                  <ul class="header__menu__dropdown">
+                    <li>
+                      <!-- <a href="shop-details.html">Shop Details</a> -->
+                      <a href="#">Shop Details</a>
+                    </li>
+                    <li>
+                      <!-- <a href="shoping-cart.html">Shoping Cart</a> -->
+                      <a href="#">Shoping Cart</a>
+                    </li>
+                    <li>
+                      <!-- <a href="checkout.html">Check Out</a> -->
+                      <a href="#">Check Out</a>
+                    </li>
+                    <li>
+                      <!-- <a href="blog-details.html">Blog Details</a> -->
+                      <a href="#">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <!-- <a href="blog.html">Health Check Up</a> -->
+                  <a href="#">Health Check Up</a>
+                </li>
+                <!-- <li>
+                  <a href="contact.html">Contact</a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <div class="header__cart">
+              <button class="image-btn" onclick="window.location.href='vbp.html'">
+                <img src="img/camera.png" alt="Your Image" width="30px" height="30px">
+              </button>              
+              <a href="pricing.html" class="primary-btn">PREMIUM</a>
+            </div>
+          </div>
+        </div>
+        <div class="humberger__open">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <section class="hero hero-normal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="hero__categories">
+              <div class="hero__categories__all">
+                <i class="fa fa-bars"></i>
+                <span>Features</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Tools 🛠️</a>
+                </li>
+                <li>
+                  <a href="calculator.html">&nbsp;&nbsp;&nbsp;&nbsp;- Index & Calorie Calculator</a>
+                </li>
+                <li>
+                  <a href="#">Expert's Advice 🗣️</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Healthy Recipe</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Professional Workout Video</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Educational Content</a>
+                </li>
+                <li>
+                  <a href="#">Personal Feature 🌟</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Water tracker</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Sleep tracker</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Reminder</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Goal Setting</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Food and Supplement &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommendations</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Plan Meals & Meal History</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Diet program</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Personal Training for Weight &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Fat Percentage Check Up</a>
+                </li>
+                <li>
+                  <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;- Professional Workout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program</a>
+                </li>
+                <li>
+                  <a href="#">Progress & Achivements 🏆</a>
+                </li>
+
+                <!-- <li><a href="#">Vegetables</a></li><li><a href="#">Fruit & Nut Gifts</a></li><li><a href="#">Fresh Berries</a></li><li><a href="#">Ocean Foods</a></li><li><a href="#">Butter & Eggs</a></li><li><a href="#">Fastfood</a></li><li><a href="#">Fresh Onion</a></li><li><a href="#">Papayaya & Crisps</a></li><li><a href="#">Oatmeal</a></li><li><a href="#">Fresh Bananas</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="hero__search">
+              <div class="hero__search__form">
+                <form action="#">
+                  <div class="hero__search__categories"> Semua Kategori <span class="arrow_carrot-down"></span>
+                  </div>
+                  <input type="text" placeholder="Mau makan apa hari ini?">
+                  <button type="submit" class="site-btn">SEARCH</button>
+                </form>
+              </div>
+              <div class="hero__search__phone">
+                <div class="hero__search__phone__icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="hero__search__phone__text">
+                  <h5>+62 89-8696-0209</h5>
+                  <span>Bantuan?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="breadcrumb__text">
+              <h2>Food Index</h2>
+              <div class="breadcrumb__option">
+                <!-- <a href="index.html">Home</a><span>Shopping Cart</span> -->
+              </div>
+
+              <div class="shoping__continue">
+                <div class="shoping__discount">
+                  <!-- <h5>Discount Codes</h5> -->
+                  <form action="#">
+                    <input type="text" placeholder="Enter Food Name">
+                    <button type="submit" class="site-btn">Search</button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes / Lists-->
+    <section class="featured spad">
+        <div class="container">
+          <div class="row featured__filter">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+              <div class="featured__item">
+                <div class="featured__item__pic set-bg" data-setbg="img/product/details/brocoli.png">
+                  <ul class="featured__item__pic__hover">
+                    <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                    <li>
+                      <a href="broccoli.html">
+                        <i class="fa fa-retweet"></i>
+                      </a>
+                    </li>
+                    <!-- <li><a href="#">i class="fa fa-shopping-cart"></i></a></li> -->
+                  </ul>
+                </div>
+                <div class="featured__item__text">
+                  <h6>
+                    <a href="broccoli.html">Brokoli</a>
+                  </h6>
+                  <h5>350 cals / kg</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+              <div class="featured__item">
+                <div class="featured__item__pic set-bg" data-setbg="img/product/details/corn.png">
+                  <ul class="featured__item__pic__hover">
+                    <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-retweet"></i>
+                      </a>
+                    </li>
+                    <!-- <li><a href="#">i class="fa fa-shopping-cart"></i></a></li> -->
+                  </ul>
+                </div>
+                <div class="featured__item__text">
+                  <h6>
+                    <a href="#">Jagung</a>
+                  </h6>
+                  <h5>400 cals / kg</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+              <div class="featured__item">
+                <div class="featured__item__pic set-bg" data-setbg="img/product/details/carrot.png">
+                  <ul class="featured__item__pic__hover">
+                    <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-retweet"></i>
+                      </a>
+                    </li>
+                    <!-- <li><a href="#">i class="fa fa-shopping-cart"></i></a></li> -->
+                  </ul>
+                </div>
+                <div class="featured__item__text">
+                  <h6>
+                    <a href="#">Wortel</a>
+                  </h6>
+                  <h5>240 cals / kg</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+              <div class="featured__item">
+                <div class="featured__item__pic set-bg" data-setbg="img/product/details/kiwi.png">
+                  <ul class="featured__item__pic__hover">
+                    <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-retweet"></i>
+                      </a>
+                    </li>
+                    <!-- <li><a href="#">i class="fa fa-shopping-cart"></i></a></li> -->
+                  </ul>
+                </div>
+                <div class="featured__item__text">
+                  <h6>
+                    <a href="#">Kiwi</a>
+                  </h6>
+                  <h5>650 cals / kg</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a href="#" class="primary-btn cart-btn cart-btn-middle"> Show More </a>
+
+    <section class="shoping-cart spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shoping__cart__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="shoping__product">Foods</th>
+                    <th>Calories (per kg / portion)</th>
+                    <th>Quantity (kg)</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="shoping__cart__item">
+                      <img src="img/product/details/corn_small.png" alt="">
+                      <h5>Jagung</h5>
+                    </td>
+                    <td class="shoping__cart__price"> 400 cals</td>
+                    <td class="shoping__cart__quantity">
+                      <div class="quantity">
+                        <div class="pro-qty">
+                          <input type="text" value="1">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="shoping__cart__total"> 400 cals </td>
+                    <td class="shoping__cart__item__close">
+                      <span class="icon_close"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="shoping__cart__item">
+                      <img src=img/product/details/kiwi_small.png alt="">
+                      <h5>Kiwi</h5>
+                    </td>
+                    <td class="shoping__cart__price"> 600 cals </td>
+                    <td class="shoping__cart__quantity">
+                      <div class="quantity">
+                        <div class="pro-qty">
+                          <input type="text" value="2">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="shoping__cart__total"> 1200 cals </td>
+                    <td class="shoping__cart__item__close">
+                      <span class="icon_close"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="shoping__cart__item">
+                      <img src="img/product/details/nasgor_small.png" alt="">
+                      <h5>Nasi Goreng</h5>
+                    </td>
+                    <td class="shoping__cart__price"> 282 cals</td>
+                    <td class="shoping__cart__quantity">
+                      <div class="quantity">
+                        <div class="pro-qty">
+                          <input type="text" value="1">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="shoping__cart__total"> 282 cals </td>
+                    <td class="shoping__cart__item__close">
+                      <span class="icon_close"></span>
+                    </td>
+                  </tr>
+                  <!-- <tr>
+                    <td class="shoping__cart__item">
+                      <img src="img/cart/cart-3.jpg" alt="">
+                      <h5>Organic Bananas</h5>
+                    </td>
+                    <td class="shoping__cart__price"> $69.00 </td>
+                    <td class="shoping__cart__quantity">
+                      <div class="quantity">
+                        <div class="pro-qty">
+                          <input type="text" value="1">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="shoping__cart__total"> $69.99 </td>
+                    <td class="shoping__cart__item__close">
+                      <span class="icon_close"></span>
+                    </td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shoping__cart__btns">
+              <!-- <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a> -->
+              <a href="#" class="primary-btn cart-btn cart-btn-right">
+                <span class="icon_loading"></span>&nbsp;Calculate</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            
+          </div>
+          <div class="col-lg-6">
+            <div class="shoping__checkout">
+              <h5>Total</h5>
+              <ul>
+                <!-- <li>Subtotal <span>$454.98</span></li> -->
+                <li>All Foods <span>1882 cals</span></li>
+              </ul>
+              <!-- <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer__about">
+              <div class="footer__about__logo">
+                <a href="index.html">
+                  <img src="images/logo2.png" alt="">
+                </a>
+              </div>
+              <ul>
+                <li>Alamat: Jl. Letjen S. Parman No.1, Jakarta Barat</li>
+                <br>
+                <li>Phone: +62 89-8696-0209</li>
+                <li>Email: kevinlvd@gmail.com</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+            <div class="footer__widget">
+              <h6>Useful Links</h6>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">About Our Shop</a>
+                </li>
+                <li>
+                  <a href="#">Secure Shopping</a>
+                </li>
+                <li>
+                  <a href="#">Delivery infomation</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Our Sitemap</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Who We Are</a>
+                </li>
+                <li>
+                  <a href="#">Our Services</a>
+                </li>
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Innovation</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="footer__widget">
+              <h6>Join Our Newsletter Now</h6>
+              <p>Get E-mail updates about our latest shop and special offers.</p>
+              <form action="#">
+                <input type="text" placeholder="Enter your mail">
+                <button type="submit" class="site-btn">Subscribe</button>
+              </form>
+              <div class="footer__widget__social">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer__copyright">
+              <div class="footer__copyright__text">
+                <p> Copyright &copy; <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script> All rights reserved  
+                </p>
+              </div>
+              <div class="footer__copyright__payment">
+                <img src="img/payment-item.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script async src="../../../www.googletagmanager.com/gtag/jsa055?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="../../../static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a45c9d84ccc8414","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+  </body>
+</html>

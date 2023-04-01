@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<style>
+body {
+	background-color: #f1f1f1;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin: auto;
+	width: 50%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #888888;
+	margin-top: 50px;
+}
+
+h1 {
+	text-align: center;
+	color: #3CB371;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+	color: #3CB371;
+}
+
+input[type=text], input[type=password] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 50px;
+	border-bottom: 2px solid #3CB371; /* Add this line */
+}
+
+a {
+  background-color: #3CB371;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  background-color: #006600;
+}
+
+
+
+</style>
+<html>
+<head>
+	<title>MeHealthy Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <a href="main.html">Login</a>
+            <br>
+            <a href="https://docs.google.com/forms/d/1JkHPt-jZd8lLHb7WsYKqczmZruOldxBfncmZj0O7l4A/edit" target="_blank">Register</a>
+			<br>
+            <a href="main.html">Continue as Guest</a>
+              
+          </form>
+	</div>
+</body>
+</html>
